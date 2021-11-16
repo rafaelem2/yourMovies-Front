@@ -1,0 +1,113 @@
+.featured {
+    height: 100vh;
+}
+
+.verticalTrans {
+    width: inherit;
+    height: inherit;
+    background: linear-gradient(to top, #111 10%, transparent 90%);
+}
+
+.horizontalTrans {
+    width: inherit;
+    height: inherit;
+    background: linear-gradient(to right, #111 20%, transparent 80%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 30px;
+    padding-bottom: 150px;
+    padding-top: 70px;
+}
+
+.featuredName {
+    font-size: 60px;
+    font-weight: bold;
+}
+
+.info {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.points {
+    display: inline-block;
+    color: rgb(39, 190, 39);
+    margin-right: 15px;
+}
+
+.seasons {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.description {
+    margin-top: 15px;
+    font-size: 20px;
+    color: #999;
+    max-width: 35%;
+}
+
+.btn {
+    margin-top: 15px;
+}
+
+.watchBtn {
+    display: inline-block;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 5px;
+    text-decoration: none;
+    padding: 12px 20px 12px 20px;
+    margin-right: 10px;
+    background-color: #fff;
+    color: #000;
+    opacity: 1;
+    transition: all ease 0.3s;
+}
+
+.listBtn {
+    display: inline-block;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 5px;
+    text-decoration: none;
+    padding: 12px 20px 12px 20px;
+    background-color: #333;
+    color: #fff;
+    opacity: 1;
+    transition: all ease 0.3s;
+}
+
+.watchBtn:hover {
+    opacity: 70%;
+}
+
+.listBtn:hover {
+    opacity: 70%;
+}
+
+.genres {
+    margin-top: 15px;
+    font-size: 15px;
+    color: #999;
+}
+
+
+@media (max-width: 800px) {
+    .featured {
+        height: 90hv;
+    }
+    .featuredName {
+        font-size: 40px;
+    }
+    .info {
+        font-size: 17px;
+    }
+    .description {
+        font-size: 16px;
+        max-width: 100%;
+        margin-right: 30px;
+    }
+}

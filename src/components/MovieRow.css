@@ -1,0 +1,86 @@
+.movieRow {
+    margin-bottom: 30px;
+}
+
+.movieRow h2 {
+    margin: 0px 0px 0px 30px;
+}
+
+.movRowListArea {
+    overflow-x: hidden;
+    padding-left: 20px;
+}
+
+.movRowList {
+    transition: all ease 0.5s;
+}
+
+.movRowItem {
+    display: inline-block;
+    width: 170px;
+    cursor: pointer;
+}
+
+.movRowItem img {
+    width: 100%;
+    transform: scale(0.9);
+    transition: all ease 0.3s;
+}
+
+.movRowItem img:hover {
+    transform: scale(1);
+}
+
+.leftArrow {
+    position: absolute;
+    height: 255px;
+    width: 40px;
+    left: 0;
+    z-index: 99;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    opacity: 0;
+    transition: all ease 0.5s;
+}
+
+.l{
+    height: 40px;
+}
+
+.rightArrow {
+    z-index: 99;
+    right: 0;
+    position: absolute;
+    height: 255px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    opacity: 0;
+    transition: all ease 0.5s;
+}
+
+.r {
+    height: 40px;
+}
+
+.movieRow:hover .leftArrow {
+    opacity: 1;
+}
+
+.movieRow:hover .rightArrow {
+    opacity: 1;
+}
+
+
+@media (max-width: 800px) {
+    .leftArrow,
+    .rightArrow {
+        opacity: 1;
+    }
+}
